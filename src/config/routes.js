@@ -1,0 +1,9 @@
+const routes = {
+    root: '/',
+    following: '/following',
+    profile: '/profile',
+    search: '/search',
+    upload: '/upload',
+};
+
+export default routes;
