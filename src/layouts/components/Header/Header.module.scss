@@ -23,6 +23,20 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
 }
 
 //actions
+
+.actions {
+    display: flex;
+    align-items: center;
+}
+
+.setting {
+    margin-left: 24px;
+    font-size: 2rem;
+    background-color: transparent;
+    padding: 4px 8px;
+    cursor: pointer;
+}

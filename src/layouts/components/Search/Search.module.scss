@@ -36,6 +36,7 @@
         height: 100%;
         caret-color: var(--primary);
         padding-right: 42px;
+        font-family: var(--custom-font);
     }
 
     input:not(:placeholder-shown) ~ .search-btn {
@@ -49,6 +50,19 @@
     right: calc(var(--search-btn-width) + 16px);
     color: rgba(22, 24, 35, 0.34);
     cursor: pointer;
+}
+
+.search-loading {
+    animation: Spinner 0.5s linear infinite;
+}
+
+@keyframes Spinner {
+    from {
+        transform: rotate(0);
+    }
+    to {
+        transform: rotate(360deg);
+    }
 }
 
 .search-btn {

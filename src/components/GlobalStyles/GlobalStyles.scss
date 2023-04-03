@@ -7,6 +7,21 @@
     --white: #fff;
     --default-header-height: 60px;
     --default-header-width: 1150px;
+    --custom-font: 'ProximaNova', sans-serif;
+}
+
+//custom font
+
+@font-face {
+    font-family: var(--custom-font);
+    src: url('/assets/fonts/Proxima-Nova-Regular.woff2');
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: var(--custom-font);
+    src: url('/assets/fonts/ProximaNova-Semibold.woff2');
+    font-weight: 600;
 }
 
 * {
@@ -34,7 +49,7 @@ html *::-webkit-scrollbar-track {
 }
 
 body {
-    font-family: 'Open Sans', sans-serif;
+    font-family: var(--custom-font);
     font-size: 1.6rem;
     line-height: 1.5;
     text-rendering: optimizeSpeed;
@@ -44,4 +59,9 @@ input,
 button {
     border: none;
     outline: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--white);
 }
