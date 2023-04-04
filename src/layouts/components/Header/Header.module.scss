@@ -40,3 +40,19 @@
     padding: 4px 8px;
     cursor: pointer;
 }
+
+.user-avatar {
+    width: 32px;
+    height: 32px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-left: 12px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-upload {
+    cursor: pointer;
+}

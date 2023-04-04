@@ -20,6 +20,76 @@ const MENU_ITEMS = [
                     type: 'language',
                     code: 'en',
                     title: 'English',
+                    children: {
+                        title: 'Language2',
+                        data: [
+                            {
+                                type: 'language',
+                                code: 'en',
+                                title: 'English2',
+                                children: {
+                                    title: 'Language3',
+                                    data: [
+                                        {
+                                            type: 'language',
+                                            code: 'en',
+                                            title: 'English3',
+                                        },
+                                        {
+                                            type: 'language',
+                                            code: 'vi',
+                                            title: 'Tiếng Việt3',
+                                        },
+                                        {
+                                            type: 'language',
+                                            code: 'en',
+                                            title: 'English3',
+                                        },
+                                        {
+                                            type: 'language',
+                                            code: 'vi',
+                                            title: 'Tiếng Việt3',
+                                        },
+                                        {
+                                            type: 'language',
+                                            code: 'en',
+                                            title: 'English3',
+                                        },
+                                        {
+                                            type: 'language',
+                                            code: 'vi',
+                                            title: 'Tiếng Việt3',
+                                        },
+                                    ],
+                                },
+                            },
+                            {
+                                type: 'language',
+                                code: 'vi',
+                                title: 'Tiếng Việt2',
+                            },
+                            {
+                                type: 'language',
+                                code: 'en',
+                                title: 'English2',
+                            },
+                            {
+                                type: 'language',
+                                code: 'vi',
+                                title: 'Tiếng Việt2',
+                            },
+                            {
+                                type: 'language',
+                                code: 'en',
+                                title: 'English2',
+                            },
+                            {
+                                type: 'language',
+                                code: 'vi',
+                                title: 'Tiếng Việt2',
+                            },
+                        ],
+                    },
                 },
                 {
                     type: 'language',

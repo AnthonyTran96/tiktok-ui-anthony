@@ -38,7 +38,7 @@ function Search() {
             <PopperWrapper>
                 <h4 className={cx('render-header')}>Account</h4>
                 {searchResult.map((item) => (
-                    <AccountItem data={item} key={item.id} />
+                    <AccountItem data={item} key={item.id} to={`/@${item.nickname}`} />
                 ))}
             </PopperWrapper>
         </div>

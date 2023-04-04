@@ -1,4 +1,5 @@
 import PropTypes from 'prop-types';
+import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import classNames from 'classnames/bind';
 import styles from './AccountItem.module.scss';
@@ -7,9 +8,9 @@ import Image from '~/components/Image';
 
 const cx = classNames.bind(styles);
 
-function AccountItem({ data }) {
+function AccountItem({ data, to }) {
     return (
-        <div className={cx('wrapper')}>
+        <Link className={cx('wrapper')} to={to}>
             <Image
                 fallback="https://fullstack.edu.vn/static/media/f8-icon.18cd71cfcfa33566a22b.png"
                 className={cx('avatar')}
@@ -23,7 +24,7 @@ function AccountItem({ data }) {
                 </div>
                 <div className={cx('nickname')}>{data.nickname}</div>
             </div>
-        </div>
+        </Link>
     );
 }
 
