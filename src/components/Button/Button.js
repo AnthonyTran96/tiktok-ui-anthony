@@ -26,7 +26,7 @@ function Button({
         disable,
         round,
         large,
-        className,
+        [className]: className,
     });
     let Button = 'button';
     if (href) {

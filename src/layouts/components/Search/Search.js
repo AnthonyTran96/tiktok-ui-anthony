@@ -65,7 +65,6 @@ function Search() {
                 visible={searchResult.length && isRender}
                 render={renderTippy}
                 interactive
-                placement="bottom-start"
                 onClickOutside={() => setIsRender(false)}
             >
                 <div className={cx('search')}>
