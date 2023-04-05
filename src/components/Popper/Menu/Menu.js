@@ -9,8 +9,9 @@ import { useState } from 'react';
 
 const cx = classNames.bind(styles);
 
-function Menu({ children, list }) {
-    const [menuPop, setMenuPop] = useState(true);
+const defaultFn = () => {};
+
+function Menu({ children, list = [], hideOnClick = false, onChange = defaultFn }) {
     const [menuData, setMenuData] = useState([{ data: list }]);
     const renderData = menuData[menuData.length - 1];
     const handleBack = () => {
@@ -33,6 +34,7 @@ function Menu({ children, list }) {
                             data={item}
                             onClick={() => {
                                 if (item.children) setMenuData((prev) => [...prev, item.children]);
+                                else onChange(item);
                             }}
                         />
                     );
@@ -43,6 +45,7 @@ function Menu({ children, list }) {
     return (
         <HeadlessTippy
             interactive
+            hideOnClick={hideOnClick}
             delay={[0, 400]}
             onHide={handleHideMenu}
             offset={[12, 8]}

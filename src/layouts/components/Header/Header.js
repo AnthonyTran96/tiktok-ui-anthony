@@ -33,8 +33,10 @@ function Header() {
                 {/* actions */}
                 <div className={cx('actions')}>
                     {userLogin ? (
-                        <Tippy content="Upload video">
-                            <UploadIcon className={cx('login-upload')} />
+                        <Tippy content="Upload video" className={cx('tippy')}>
+                            <div className={cx('upload-action')}>
+                                <UploadIcon className={cx('login-upload')} />
+                            </div>
                         </Tippy>
                     ) : (
                         <>

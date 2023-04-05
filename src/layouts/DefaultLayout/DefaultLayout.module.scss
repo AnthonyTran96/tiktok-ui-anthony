@@ -1,6 +1,7 @@
 .container {
     display: flex;
     padding: 24px;
+    margin-top: var(--default-header-height);
 }
 
 .content {

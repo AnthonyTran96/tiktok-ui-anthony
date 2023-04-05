@@ -7,19 +7,19 @@
     --white: #fff;
     --default-header-height: 60px;
     --default-header-width: 1150px;
-    --custom-font: 'ProximaNova', sans-serif;
+    --custom-font: 'ProximaNova';
 }
 
 //custom font
 
 @font-face {
-    font-family: var(--custom-font);
+    font-family: ProximaNova;
     src: url('/assets/fonts/Proxima-Nova-Regular.woff2');
     font-weight: 400;
 }
 
 @font-face {
-    font-family: var(--custom-font);
+    font-family: ProximaNova;
     src: url('/assets/fonts/ProximaNova-Semibold.woff2');
     font-weight: 600;
 }

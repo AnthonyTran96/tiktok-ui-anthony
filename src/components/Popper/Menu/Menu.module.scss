@@ -28,6 +28,9 @@
     align-items: center;
     position: relative;
     flex-shrink: 0;
+    width: 100%;
+    position: fixed;
+    background-color: var(--white);
 }
 
 .header-back {
